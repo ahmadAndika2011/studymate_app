@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form method="POST" 
+    <% if(choose === "login"){ %>
+        action="/login">
+    <% } else if (choose === "sign-in") { %>
+        action="/sign-in">
+    <% } %>
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <button type="submit">
+            <% if(choose === "login"){ %>
+                login
+            <% } else if(choose == "sign-in") { %>
+                Sign-In
+            <% } %>
+        </button>
+    </form>
+</body>
+</html>
